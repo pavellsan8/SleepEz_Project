@@ -13,7 +13,7 @@ const Footer = () => {
                             <span className='title01'>Sleep</span>
                             <span className='title02'>Ez</span>
                         </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ea quo ex ullam laboriosam magni totam, facere eos iure voluptate.</p>
+                        <p>Your premier destination for sleep challenges and enhancing the quality of your rest and find yourself battling stress at bedtime the presence of SleepEz is here to provide expert advice and practical tips to help you achieve a more peaceful night's sleep.</p>
                         <div className="footer-icons">
                             <i class="facebook"><FaFacebookF/></i>
                             <i class="twitter"><FaTwitter/></i>
@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
                     <div className="col-md-6 col-lg-3 col-12 ft-2">
                         <h5>Services</h5>
-                        <ul>1
+                        <ul>
                             <li className="nav-item">
                                 <a className="" href="/">Home</a>
                             </li>
