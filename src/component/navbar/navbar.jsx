@@ -4,27 +4,34 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 function NavbarDefault() {
   return (
     <div>  
       <Navbar expand="lg" className="navbar" bg="light" data-bs-theme="light" fixed="top">
         <Container>
-          <Navbar.Brand href="#home" className="title">
+          <Link to="/" style={{textDecoration:'none'}}>
+            <Navbar.Brand href="#home" className="title">
               <span className='title1'>Sleep</span>
               <span className='title2'>Ez</span>
-          </Navbar.Brand>
+            </Navbar.Brand>
+          </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className="ms-auto">
-              <Nav.Link class="navbar-option" href="./HomePage">Home</Nav.Link>
+              <Link to="/home" style={{textDecoration:'none'}}>
+                <Nav.Link class="navbar-option" href="#home">Home</Nav.Link>
+              </Link>
               <Nav.Link href="#tips">Tips</Nav.Link>
               <Nav.Link href="#music">Music</Nav.Link>
               <Nav.Link href="#videos">Videos</Nav.Link>
               <Nav.Link href="#aboutus">About Us</Nav.Link>
             </Nav>
             <Nav className="ms-auto">
-              <Button href="signup" variant="outline-info">Sign Up</Button>
+              <Link to="/signup" style={{textDecoration:'none'}}>
+                <Button href="signup" variant="outline-info">Sign Up</Button>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

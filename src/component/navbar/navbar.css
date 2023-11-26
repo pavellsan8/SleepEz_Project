@@ -8,10 +8,10 @@
   align-items: center;
   justify-content: space-between; 
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 1.5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.5px rgba(0, 0, 0, 0.15);
 }
 
-.title.navbar-brand{
+.title.navbar-brand {
   font-size: 25px;
   font-weight: 800;
 }
@@ -29,6 +29,7 @@ a.nav-link {
   font-size: 14.5px;
   font-weight: 600;
   margin: 0 8px;
+  text-decoration: none;
 }
 
 a.nav-link:hover {

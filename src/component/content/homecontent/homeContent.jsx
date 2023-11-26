@@ -8,7 +8,7 @@ function HomeContent() {
             <div className="home-content">
                 <div className="home-content-text">
                     <h1 className="text-title">Having Difficulty Falling Asleep? Stress? Insomnia?</h1>
-                    <p className="text-subtitle">Congratulations! You've found the ideal place to sleep and rejuvenate yourself. Glad to be to your ultimate haven for peaceful evenings and delightful dreams!</p>
+                    <p className="text-subtitle">Congratulations! You've found the ideal place to sleep and rejuvenate yourself. Glad to be to your ultimate heaven for peaceful evenings and delightful dreams!</p>
                     <button className="started-btn">Get Started</button>
                 </div>
                 <div className="home-content-image">

@@ -30,8 +30,9 @@
     padding: 0.4rem 0.5rem;
     background: #EBEBEB;
     color: #072C47;
-    margin: 0 0.5rem;
+    margin: 1rem 0.5rem;
     border-radius: 50%;
+    transition: 0.3s;
 }
   
 .footer-icons i:hover {
