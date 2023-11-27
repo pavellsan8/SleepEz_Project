@@ -1,0 +1,6 @@
+.form-bg {
+    background-image: url('../../asset/FormPageBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
