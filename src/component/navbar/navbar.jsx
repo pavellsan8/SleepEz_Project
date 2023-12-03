@@ -24,7 +24,9 @@ function NavbarDefault() {
                 <Nav.Link class="navbar-option" href="#home">Home</Nav.Link>
               </Link>
               <Nav.Link href="#tips">Tips</Nav.Link>
-              <Nav.Link href="#music">Music</Nav.Link>
+              <Link to="/music" style={{textDecoration:'none'}}>
+                <Nav.Link href="#music">Music</Nav.Link>
+              </Link>
               <Nav.Link href="#videos">Videos</Nav.Link>
               <Nav.Link href="#aboutus">About Us</Nav.Link>
             </Nav>

@@ -5,6 +5,7 @@ import './component/navbar/navbar.jsx';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/Home/Home.jsx';
 import SignUpPage from './pages/SignUp/SignUp.jsx';
+import MusicPage from './pages/Music/Music.jsx';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/home" element={<HomePage/>} />
+          <Route path="/music" element={<MusicPage/>} />
           <Route path="/signup" element={<SignUpPage/>} />
         </Routes>
       </div>

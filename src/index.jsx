@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
+import { StateSupport } from './utils/StateSupports';
+import reducer, { initialState } from './utils/reducerItem';
 
 // const router = createBrowserRouter([
 //   {
@@ -19,9 +21,11 @@ import {BrowserRouter} from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App/>
-    </BrowserRouter>
+    <StateSupport initialState={initialState} reducer={reducer}>
+      <BrowserRouter>
+        <App/>
+      </BrowserRouter>
+    </StateSupport>
   </React.StrictMode>
 );
 

@@ -1,4 +1,3 @@
-import './Home.css'
 import '../../component/navbar/navbar.jsx';
 import NavbarDefault from '../../component/navbar/navbar.jsx';
 import Footer from '../../component/footer/footer.jsx';
