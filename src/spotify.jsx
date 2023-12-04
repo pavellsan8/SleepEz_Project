@@ -10,7 +10,8 @@ const scopes = [
     'user-read-playback-state',
     'user-read-currently-playing',
     'user-read-recently-played',
-    'user-top-read']
+    'user-top-read',
+    'playlist-read-collaborative']
 
 export const loginEndpoint = `${authEndPoint}client_id=${cliendId}&redirect_uri=${redirectUrl}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
   
