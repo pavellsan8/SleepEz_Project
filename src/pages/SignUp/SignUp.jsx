@@ -1,15 +1,3 @@
-// import React from "react";
-
-// function SignUpPage() {
-//     return(
-//         <div className="testing">
-//             <h1>Haloooo</h1>
-//         </div>
-//     );
-// }
-
-// export default SignUpPage;
-
 import { useState } from 'react';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -19,7 +7,6 @@ import './SignUp.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import FormBg from '../../asset/FormPageBg.png';
 
 function SignUpPage() {
   const [validated, setValidated] = useState(false);
