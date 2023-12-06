@@ -1,9 +1,8 @@
 import axios from 'axios';
 
-const response_type = 'token';
 const authEndPoint = 'https://accounts.spotify.com/authorize?';
 const cliendId = '96e5626f2b2a449abf941a88333e8e73';
-const redirectUrl = 'http://localhost:3000';
+const redirectUrl = 'http://localhost:3000/music';
 const scopes = [
     'user-read-private',
     'user-read-email',

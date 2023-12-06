@@ -42,10 +42,6 @@
     cursor: pointer;
 }
   
-.Footer h5 {
-    color: #0DBAD2;
-}
-  
 .ft-2 ul {
     list-style: none;
     padding-left: 0;
@@ -71,4 +67,19 @@
   
 .ft-3 i {
     padding-right: 0.5rem;
+}
+
+.nav-item a{
+    color: white;
+    transition: 0.2s
+}
+
+.nav-item a:hover {
+    color: #878787;
+    transition: 0.2s;
+}
+
+.title-footer {
+    font-weight: 700;
+    color: #0DBAD2;
 }

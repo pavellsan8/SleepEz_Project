@@ -5,25 +5,25 @@ function MusicContent() {
     const [token, setToken] = useState("")
 
     useEffect(() => {
-      const hash = window.location.hash
-      console.log(hash)
-      let token = window.localStorage.getItem("token", token)
-  
-      // getToken()
-  
-      if (!token && hash) {
-          token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1]
+      if (window.location.hash) {
+        const hash = window.location.hash
+        let token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1]
           // console.log(token)
-          window.location.hash = ""
-          window.localStorage.setItem("token", token)
+        window.location.hash = ""
+        window.localStorage.setItem("token", token.access_token)
+        setToken(token.access_token);
+        window.history.pushState({}, null, '/music')
       }
-  
-      setToken(token)
   
   }, [])
   return (
     <div>
-        
+      {
+        token && 
+        <div>
+          <h1>login page</h1>
+        </div>
+      }
     </div>
   )
 }

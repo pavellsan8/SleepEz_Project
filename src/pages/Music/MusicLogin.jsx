@@ -1,17 +1,16 @@
 import React from 'react'
 import NavbarDefault from '../../component/navbar/navbar'
 import Footer from '../../component/footer/footer'
-import MusicContent from '../../component/content/musicContent/musicLogin'
+import MusicLogin from '../../component/content/musicContent/musicLogin'
 
-function MusicPage() {
-
+function MusicLoginPage() {
   return (
     <div>
         <NavbarDefault/>
-        <MusicContent/>
+        <MusicLogin/>
         <Footer/>
     </div>
   )
 }
 
-export default MusicPage
+export default MusicLoginPage

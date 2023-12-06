@@ -14,7 +14,7 @@
 }
 
 .title-form.navbar-brand {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 800;
 }
   
@@ -24,4 +24,13 @@
   
 .title-form-2 {
     color: #072C47;
+}
+
+.subtitle-form {
+    margin: 1rem 0;
+}
+
+.subtitle-text-form {
+    font-weight: 600;
+    font-size: 17px;
 }

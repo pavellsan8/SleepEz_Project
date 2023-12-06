@@ -30,8 +30,10 @@ function SignUpPage() {
                     <span className='title-form-2'>Ez</span>
                 </Navbar.Brand>
             </Link>
+            <div className="subtitle-form">
+                <span className="subtitle-text-form">Register and join us for better life</span>
+            </div>
             <div className='form-content'>
-                {/* <img className="form-ilustration" src={FormBg} alt=""/> */}
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
                     <Form.Label>Email address</Form.Label>
@@ -107,7 +109,7 @@ function SignUpPage() {
                 <Form.Group className="mb-3">
                     <Form.Check
                         required
-                        label="Agree to terms and conditions"
+                        label="I agree to following SleepEz terms and conditions."
                         feedback="You must agree before submitting."
                         feedbackType="invalid"
                     />
