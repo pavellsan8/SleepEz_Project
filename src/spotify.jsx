@@ -19,11 +19,11 @@ export const loginEndpoint = `${authEndPoint}client_id=${cliendId}&redirect_uri=
     baseURL: "https://api.spotify.com/v1/",
   });
   
-  // export const setClientToken = (token) => {
-  //   apiClient.interceptors.request.use(async function (config) {
-  //     config.headers.Authorization = "Bearer " + token;
-  //     return config;
-  //   });
-  // };
+  export const setClientToken = (token) => {
+    apiClient.interceptors.request.use(async function (config) {
+      config.headers.Authorization = "Bearer " + token;
+      return config;
+    });
+  };
   
   export default apiClient;

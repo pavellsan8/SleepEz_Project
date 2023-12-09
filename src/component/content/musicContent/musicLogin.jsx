@@ -2,15 +2,10 @@ import React from 'react'
 import { loginEndpoint } from '../../../spotify'
 import "./musicLogin.css"
 import { FaSpotify } from "react-icons/fa";
-//import MusicBg from '../../../asset/piano-bg.jpg'
 
 function MusicLogin() {
   return (
-    <div className="main-body m-auto" 
-      // style={{
-      //   backgroundImage:`url(${MusicBg})`,
-      //   backgroundSize: 'cover'}}
-    >
+    <div className="main-body m-auto">
       <div className="title-text">
         <span className="title-text-1">Sleep</span>        
         <span className="title-text-2">Ez</span>        

@@ -11,15 +11,15 @@ import MusicMainPage from './pages/Music/MusicPage.jsx';
 
 function App() {
   return (
-      <div className="App">  
-        <Routes>
-          <Route path="/" element={<HomePage/>} />
-          <Route path="/home" element={<HomePage/>} />
-          <Route path="/musiclogin" element={<MusicLoginPage/>} />
-          <Route path="/music" element={<MusicMainPage/>} />
-          <Route path="/signup" element={<SignUpPage/>} />
-        </Routes>
-      </div>
+    <div className="App">  
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/home" element={<HomePage/>} />
+        <Route path="/musiclogin" element={<MusicLoginPage/>} />
+        <Route path="/music" element={<MusicMainPage/>} />
+        <Route path="/signup" element={<SignUpPage/>} />
+      </Routes>
+    </div>
   );
 }
 
