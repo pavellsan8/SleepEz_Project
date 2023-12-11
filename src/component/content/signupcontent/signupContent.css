@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.form-allcontent {
+    width: 100%;
+}
+
+.form-bg {
+    background-image: url('../../../asset/FormPageBg.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem;
+}
+
+.title-form.navbar-brand {
+    font-size: 30px;
+    font-weight: 800;
+}
+  
+.title-form-1 {
+    color: #0DBAD2;
+}
+  
+.title-form-2 {
+    color: #072C47;
+}
+
+.subtitle-form {
+    margin: 1rem 0;
+}
+
+.subtitle-text-form {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.button-signup-regis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-btn {
+    background-color: #0DBAD2;
+    width: 50%;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.or-text {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-weight: 600;  
+}
+
+.button-login-regis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-btn {
+    background-color: white;
+    outline: #0DBAD2;
+    width: 50%;
+    color: #0DBAD2;
+    font-weight: 600;
+    margin: 1rem 0;
+}

@@ -5,7 +5,7 @@
 }
 
 .form-bg {
-    background-image: url('../../asset/FormPageBg.png');
+    background-image: url('../../../asset/FormPageBg.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -33,4 +33,39 @@
 .subtitle-text-form {
     font-weight: 600;
     font-size: 17px;
+}
+
+.button-login-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-btn-login {
+    background-color: #0DBAD2;
+    width: 50%;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.or-text {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-weight: 600;  
+}
+
+.button-signup-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-btn-login {
+    background-color: white;
+    outline: #0DBAD2;
+    width: 50%;
+    color: #0DBAD2;
+    font-weight: 600;
+    margin: 1rem 0;
 }
