@@ -24,8 +24,9 @@ function Playlist() {
                 console.log("API Response:", response.data);
                 dispatch({ type: reducerCases.SET_PLAYLISTS, playlists });
                 console.log("Playlists:", playlists);
+                console.log("API Response:", response.data);
             } catch (error) {
-                console.error("Error fetching playlists:", error);
+                console.log("Error fetching playlists:", error);
             }
         };
 
@@ -39,7 +40,7 @@ function Playlist() {
     };
 
     return (
-        <div>
+        <div className='user-playlist'>
             <ul>
                 {playlists.map(({ name, id }) => {
                     return (

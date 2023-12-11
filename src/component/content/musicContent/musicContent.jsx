@@ -11,7 +11,7 @@ function MusicContent() {
     setToken(storedToken || '');
     if (storedToken) {
       setClientToken(storedToken);
-      console.log(storedToken);
+      //console.log(storedToken);
     }
   }, []); 
 
@@ -32,8 +32,6 @@ function MusicContent() {
       {
         token && 
         <div className='main-body-music'>
-          <h1>login page</h1>
-          <p>{token}</p>
           <Sidebar/>
         </div>
       }

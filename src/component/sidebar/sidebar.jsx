@@ -5,24 +5,24 @@ import { FaHome, FaSearch, FaList } from "react-icons/fa";
 
 function Sidebar() {
     return (
-        <div className="top-links">
+        <div className="sidebar-menu">
             <div className="logo">
                 <img className='image-logo'
                 src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
                 alt="spotify"/>
             </div>
-            <ul>
-                <li>
+            <ul class='list-item-container'>
+                <li class='list-item'>
                     <FaHome />
-                    <span>Home</span>
+                    <span> Home</span>
                 </li>
-                <li>
+                <li class='list-item'>
                     <FaSearch />
-                    <span>Search</span>
+                    <span> Search</span>
                 </li>
-                <li>
+                <li class='list-item'>
                     <FaList />
-                    <span>Your Library</span>
+                    <span> Your Library</span>
                 </li>
             </ul>
         <Playlist />

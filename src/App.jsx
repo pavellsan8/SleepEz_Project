@@ -18,6 +18,7 @@ function App() {
         <Route path="/musiclogin" element={<MusicLoginPage/>} />
         <Route path="/music" element={<MusicMainPage/>} />
         <Route path="/signup" element={<SignUpPage/>} />
+        {/*<Route path="*" element={<NotFoundPage/>} />*/}
       </Routes>
     </div>
   );
