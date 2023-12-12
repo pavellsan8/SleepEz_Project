@@ -2,7 +2,7 @@ import './musicContent.css';
 import React, { useEffect, useState } from 'react'
 import { setClientToken } from '../../../spotify';
 import Sidebar from '../../sidebar/sidebar';
-import axios from 'axios';
+//import axios from 'axios';
 
 function MusicContent() {
   const [token, setToken] = useState('');

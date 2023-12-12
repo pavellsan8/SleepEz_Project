@@ -1,6 +1,6 @@
 import './homeContent.css';
 import HomeImage from "../../../asset/homeImageIlustration.png";
-import { useEffect, useState } from 'react';
+//import { useEffect, useState } from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 function HomeContent() {

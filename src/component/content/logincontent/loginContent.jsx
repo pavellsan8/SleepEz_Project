@@ -22,8 +22,8 @@ function LoginContent() {
   };
 
   return (
-    <div className="form-allcontent">
-        <div className="form-bg">
+    <div className="form-allcontent-login">
+        <div className="form-bg-login">
             <Link to="/" style={{ textDecoration: "none" }}>
                 <Navbar.Brand href="#" className="title-form">
                     <span className="title-form-1">Sleep</span>
@@ -31,7 +31,7 @@ function LoginContent() {
                 </Navbar.Brand>
             </Link>
             <div className="subtitle-form">
-                <span className="subtitle-text-form">Register and join us for better life</span>
+                <span className="subtitle-text-form">Login here if you already have an account</span>
             </div>
             <div className="form-content">
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
@@ -46,7 +46,7 @@ function LoginContent() {
                             <Form.Control.Feedback type="invalid">Password can't be empty</Form.Control.Feedback>
                     </Form.Group>
 
-                    <Row className="mb-3">
+                    {/* <Row className="mb-3">
                         <Form.Group as={Col} md="4" controlId="validationCustom01">
                             <Form.Label>First name</Form.Label>
                                 <Form.Control required type="text" placeholder="First name" />
@@ -98,17 +98,17 @@ function LoginContent() {
                             feedback="You must agree before submitting."
                             feedbackType="invalid"
                         />
-                    </Form.Group>
+                    </Form.Group> */}
             {/* <Link to="/" style={{textDecoration:'none'}}> */}
                 <div className="button-login-login">
                     <Button type="submit" className="login-btn-login">Login</Button>
                 </div>
                 <p className="or-text">Or</p>
-                <div className="button-signup-login">
-                    <Link to="/signup" style={{textDecoration:'none'}}>
+                <Link to="/signup" style={{textDecoration:'none'}}>
+                    <div className="button-signup-login">
                         <Button className="signup-btn-login">Sign Up</Button>
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             {/* </Link> */}
                 </Form>
             </div>

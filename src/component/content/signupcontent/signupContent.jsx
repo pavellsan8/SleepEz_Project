@@ -21,8 +21,8 @@ function SignUpContent() {
   };
 
   return (
-    <div className='form-allcontent'>
-        <div className='form-bg'>
+    <div className='form-allcontent-regis'>
+        <div className='form-bg-regis'>
             <Link to="/" style={{textDecoration:'none'}}>
                 <Navbar.Brand href="#" className="title-form">
                     <span className='title-form-1'>Sleep</span>
@@ -115,14 +115,14 @@ function SignUpContent() {
                 </Form.Group>
                 {/* <Link to="/" style={{textDecoration:'none'}}> */}
                 <div className="button-signup-regis">
-                    <Button type="submit" className='signup-btn'>Sign Up</Button>
+                    <Button type="submit" className='signup-btn-regis'>Sign Up</Button>
                 </div>
                 <p className="or-text">Or</p>
-                <div className="button-login-regis">
-                    <Link to="/login" style={{textDecoration:'none'}}>
-                        <Button className='login-btn'>Login</Button>
-                    </Link>
-                </div>
+                <Link to="/login" style={{textDecoration:'none'}}>
+                    <div className="button-login-regis">
+                        <Button className='login-btn-regis'>Login</Button>
+                    </div>
+                </Link>
                 {/* </Link> */}
                 </Form>
             </div>
