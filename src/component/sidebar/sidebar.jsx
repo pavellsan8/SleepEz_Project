@@ -11,17 +11,17 @@ function Sidebar() {
                 src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
                 alt="spotify"/>
             </div>
-            <ul class='list-item-container'>
-                <li class='list-item'>
+            <ul className='list-item-container'>
+                <li className='list-item'>
                     <FaHome />
                     <span> Home</span>
                 </li>
-                <li class='list-item'>
+                <li className='list-item'>
                     <FaSearch />
                     <span> Search</span>
                 </li>
                 <li class='list-item'>
-                    <FaList />  
+                    <FaList />
                     <span> Your Library</span>
                 </li>
             </ul>

@@ -11,20 +11,21 @@ const scopes = [
   'user-read-currently-playing',
   'user-read-recently-played',
   'user-top-read',
+  'user-read-playback-position',
   'playlist-read-collaborative', 
   'playlist-read-private']
 
 export const loginEndpoint = `${authEndPoint}client_id=${cliendId}&redirect_uri=${redirectUrl}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
   
-  const apiClient = axios.create({
-    baseURL: "https://api.spotify.com/v1/",
+const apiClient = axios.create({
+  baseURL: "https://api.spotify.com/v1/",
+});
+
+export const setClientToken = (token) => {
+  apiClient.interceptors.request.use(async function (config) {
+    config.headers.Authorization = "Bearer " + token;
+    return config;
   });
-  
-  export const setClientToken = (token) => {
-    apiClient.interceptors.request.use(async function (config) {
-      config.headers.Authorization = "Bearer " + token;
-      return config;
-    });
-  };
-  
-  export default apiClient;
+};
+
+export default apiClient;

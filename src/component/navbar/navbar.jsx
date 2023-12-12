@@ -21,7 +21,7 @@ function NavbarDefault() {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className="ms-auto">
               <Link to="/home" style={{textDecoration:'none'}}>
-                <Nav.Link class="navbar-option" href="#home">Home</Nav.Link>
+                <Nav.Link className="navbar-option" href="#home">Home</Nav.Link>
               </Link>
               {/* <Link to="/aboutus" style={{textDecoration:'none'}}> */}
                 <Nav.Link href="#tips">Tips</Nav.Link>

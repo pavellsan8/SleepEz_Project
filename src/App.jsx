@@ -22,7 +22,6 @@ function App() {
         <Route path="/aboutus" element={<AboutUsPage/>} />
         <Route path="/signup" element={<SignUpPage/>} />
         <Route path="/login" element={<LoginPage/>} />
-        {/*<Route path="*" element={<NotFoundPage/>} />*/}
       </Routes>
     </div>
   );
