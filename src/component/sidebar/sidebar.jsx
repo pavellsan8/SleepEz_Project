@@ -21,7 +21,7 @@ function Sidebar() {
                     <span> Search</span>
                 </li>
                 <li class='list-item'>
-                    <FaList />
+                    <FaList />  
                     <span> Your Library</span>
                 </li>
             </ul>
