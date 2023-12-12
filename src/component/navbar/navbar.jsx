@@ -23,12 +23,18 @@ function NavbarDefault() {
               <Link to="/home" style={{textDecoration:'none'}}>
                 <Nav.Link class="navbar-option" href="#home">Home</Nav.Link>
               </Link>
-              <Nav.Link href="#tips">Tips</Nav.Link>
+              {/* <Link to="/aboutus" style={{textDecoration:'none'}}> */}
+                <Nav.Link href="#tips">Tips</Nav.Link>
+              {/* </link> */}
               <Link to="/musiclogin" style={{textDecoration:'none'}}>
                 <Nav.Link href="#music">Music</Nav.Link>
               </Link>
-              <Nav.Link href="#videos">Videos</Nav.Link>
-              <Nav.Link href="#aboutus">About Us</Nav.Link>
+              {/* <Link to="/aboutus" style={{textDecoration:'none'}}> */}
+                <Nav.Link href="#videos">Videos</Nav.Link>
+              {/* </link> */}
+              <Link to="/aboutus" style={{textDecoration:'none'}}>
+                <Nav.Link href="#aboutus">About Us</Nav.Link>
+              </Link>
             </Nav>
             <Nav className="ms-auto">
               <Link to="/signup" style={{textDecoration:'none'}}>
