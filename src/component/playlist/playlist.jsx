@@ -6,11 +6,12 @@ import { useStateProvider } from '../../utils/StateSupports.jsx';
 
 function Playlist() {
     const [{ token, playlists }, dispatch] = useStateProvider();
+    const PLAYLIST_ENDPOINT = "https://api.spotify.com/v1/me/playlists";
 
     useEffect(() => {
         const getPlaylistData = async () => {
             try {
-                const response = await axios.get("https://api.spotify.com/v1/me/playlists", {
+                const response = await axios.get(PLAYLIST_ENDPOINT , {
                     method: "GET",
                     headers: {
                         Authorization: "Bearer " + token,
@@ -27,11 +28,11 @@ function Playlist() {
                 //console.log("Playlists:", playlists);
                 console.log("API Response:", response.data);
             } catch (error) {
-                console.log("Error fetching playlists:", error);
+                console.log("Error response fetching playlists:", error.response);
             }
         };
         if (token) {
-            getPlaylistData();
+            getPlaylistData(PLAYLIST_ENDPOINT, playlists);
         }
     }, [token, dispatch]);
 
