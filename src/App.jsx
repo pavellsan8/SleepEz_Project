@@ -10,6 +10,7 @@ import MusicLoginPage from './pages/Music/MusicLogin.jsx';
 import MusicMainPage from './pages/Music/MusicPage.jsx';
 import LoginPage from './pages/Login/Login.jsx';
 import AboutUsPage from './pages/AboutUs/AboutUs.jsx';
+import NotFoundPage from './pages/NotFound/NotFound.jsx';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUsPage/>} />
         <Route path="/signup" element={<SignUpPage/>} />
         <Route path="/login" element={<LoginPage/>} />
+        <Route path="*" element={<NotFoundPage/>} />
       </Routes>
     </div>
   );

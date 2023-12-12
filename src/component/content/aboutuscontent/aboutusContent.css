@@ -1,12 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.main-div {
+.main-div-1 {
     width: 100%;
-    height: 100vh;
-    background-color: azure;
+    height: 120vh;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutus-content {
+    padding: 4rem;
+}
+
+.title-text-aboutus {
+    width: 60%;
+    margin: 1rem 0;
+}
+
+.title-texts {
+    font-weight: 800;
+    font-size: 40px;
+    color: #072C47;
+}
+
+.img-text-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.image-aboutus {
+    margin: 1rem 2rem;
+}
+
+.image-setting {
+    width: 90vh;
+}
+
+.text-aboutus {
+    margin: 0 2rem;
+}
+
+.title-text-setting {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.subtitle-text-setting {
+    font-weight: 500;
+}
+
+.main-div-2 {
+    width: 100%;
+    height: 115vh;
+    background-color: white;
     font-family: 'Montserrat', sans-serif;
+}
+
+.img-text-content-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.text-aboutus-2 {
+    margin: 0 1rem;
 }
