@@ -18,10 +18,10 @@ const Footer = () => {
                         </Link>
                         <p>Your premier destination for sleep challenges and enhancing the quality of your rest and find yourself battling stress at bedtime the presence of SleepEz is here to provide expert advice and practical tips to help you achieve a more peaceful night's sleep.</p>
                         <div className="footer-icons">
-                            <i class="facebook"><FaFacebookF/></i>
-                            <i class="twitter"><FaTwitter/></i>
-                            <i class="instagram"><FaInstagram/></i>
-                            <i class="linkedin"><FaLinkedinIn/></i>
+                            <i className="facebook"><FaFacebookF/></i>
+                            <i className="twitter"><FaTwitter/></i>
+                            <i className="instagram"><FaInstagram/></i>
+                            <i className="linkedin"><FaLinkedinIn/></i>
                         </div>
                     </div>
                     <div className="col-md-6 col-lg-3 col-12 ft-2">
@@ -50,9 +50,9 @@ const Footer = () => {
                     </div>
                     <div className="col-md-6 col-lg-4 col-12 ft-3">
                         <h5 className="title-footer">Contact Us</h5>
-                        <p><i class="phone"><FaPhoneAlt/></i> +62 217359083</p>
-                        <p><i class="envelope"><FaRegEnvelope/></i> sleepez@mail.com</p>
-                        <p><i class="paper-plane"><FaPaperPlane/></i> Jakarta, Indonesia</p>
+                        <p><i className="phone"><FaPhoneAlt/></i> +62 217359083</p>
+                        <p><i className="envelope"><FaRegEnvelope/></i> sleepez@mail.com</p>
+                        <p><i className="paper-plane"><FaPaperPlane/></i> Jakarta, Indonesia</p>
                     </div>
                 </div>
             </div>

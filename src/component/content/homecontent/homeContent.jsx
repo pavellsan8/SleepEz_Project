@@ -6,7 +6,6 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 function HomeContent() {
 
     const sleepText = ['Asleep', 'Stress', 'Insomnia']
-    // const [sleepDisorder, setSleepDisorder] = useState(0)
 
     const [text] = useTypewriter({
         words: sleepText, 
@@ -14,12 +13,6 @@ function HomeContent() {
         typeSpeed: 125,
         deleteSpeed: 100
     });
-
-    // useEffect(() => {
-    //     const intervalChanged = setInterval(() => {
-    //         setSleepDisorder((textIndex) => (textIndex + 1) % sleepText.length);
-    //     }, 4000);
-    // }, []);
 
     return(
         <div className="home-bg">
