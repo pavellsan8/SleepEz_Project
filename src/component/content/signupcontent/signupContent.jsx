@@ -10,128 +10,128 @@ import Button from 'react-bootstrap/Button';
 import { Link, useNavigate } from 'react-router-dom';
 
 function SignUpContent() {
-  const [validated, setValidated] = useState(false);
-  const navigate = useNavigate();
+    const [validated, setValidated] = useState(false);
+    const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    } else {
-        navigate('/login');
-    }
-    setValidated(true);
-  };
+    const handleSubmit = (event) => {
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        } else {
+            navigate('/login');
+        }
+        setValidated(true);
+    };
 
-  return (
-    <div className='form-allcontent-regis'>
-        <div className='form-bg-regis'>
-            <Link to="/" style={{textDecoration:'none'}}>
-                <Navbar.Brand href="#" className="title-form">
-                    <span className='title-form-1'>Sleep</span>
-                    <span className='title-form-2'>Ez</span>
-                </Navbar.Brand>
-            </Link>
-            <div className="subtitle-form">
-                <span className="subtitle-text-form">Register and join us for better life</span>
-            </div>
-            <div className='form-content'>
-                <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formGroupEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control 
-                        required
-                        type="email" 
-                        placeholder="Enter email" />
-                    <Form.Control.Feedback type="invalid">Email can't be empty</Form.Control.Feedback>
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formGroupPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control 
-                        required
-                        type="password" 
-                        placeholder="Password" />
-                    <Form.Control.Feedback type="invalid">Password can't be empty</Form.Control.Feedback>
-                </Form.Group>
-
-            <Row className="mb-3">
-                <Form.Group as={Col} md="4" controlId="validationCustom01">
-                    <Form.Label>First name</Form.Label>
-                    <Form.Control 
-                        required
-                        type="text"
-                        placeholder="First name"
-                    />
-                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                    <Form.Control.Feedback type="invalid">Name can't be empty</Form.Control.Feedback>
-                </Form.Group>
-                <Form.Group as={Col} md="4" controlId="validationCustom02">
-                    <Form.Label>Last name</Form.Label>
-                    <Form.Control
-                        required
-                        type="text"
-                        placeholder="Last name"                    />
-                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                </Form.Group>
-                <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-                    <Form.Label>Username</Form.Label>
-                    <InputGroup hasValidation>
-                        <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
-                        <Form.Control
-                            type="text"
-                            placeholder="Username"
-                            aria-describedby="inputGroupPrepend"
+    return (
+        <div className='form-allcontent-regis'>
+            <div className='form-bg-regis'>
+                <Link to="/" style={{textDecoration:'none'}}>
+                    <Navbar.Brand href="#" className="title-form">
+                        <span className='title-form-1'>Sleep</span>
+                        <span className='title-form-2'>Ez</span>
+                    </Navbar.Brand>
+                </Link>
+                <div className="subtitle-form">
+                    <span className="subtitle-text-form">Register and join us for better life</span>
+                </div>
+                <div className='form-content'>
+                    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                    <Form.Group className="mb-3" controlId="formGroupEmail">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control 
                             required
-                        />
-                        <Form.Control.Feedback type="invalid">Please choose a username.</Form.Control.Feedback>
-                    </InputGroup>
-                </Form.Group>
-                </Row>
+                            type="email" 
+                            placeholder="Enter email" />
+                        <Form.Control.Feedback type="invalid">Email can't be empty</Form.Control.Feedback>
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formGroupPassword">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control 
+                            required
+                            type="password" 
+                            placeholder="Password" />
+                        <Form.Control.Feedback type="invalid">Password can't be empty</Form.Control.Feedback>
+                    </Form.Group>
 
                 <Row className="mb-3">
-                    <Form.Group as={Col} md="6" controlId="validationCustom03">
-                        <Form.Label>City</Form.Label>
-                        <Form.Control type="text" placeholder="City" required />
-                        <Form.Control.Feedback type="invalid">Please provide a valid city.</Form.Control.Feedback>
+                    <Form.Group as={Col} md="4" controlId="validationCustom01">
+                        <Form.Label>First name</Form.Label>
+                        <Form.Control 
+                            required
+                            type="text"
+                            placeholder="First name"
+                        />
+                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                        <Form.Control.Feedback type="invalid">Name can't be empty</Form.Control.Feedback>
                     </Form.Group>
-
-                    <Form.Group as={Col} md="3" controlId="validationCustom04">
-                        <Form.Label>State</Form.Label>
-                        <Form.Control type="text" placeholder="State" required />
-                        <Form.Control.Feedback type="invalid">Please provide a valid state.</Form.Control.Feedback>
+                    <Form.Group as={Col} md="4" controlId="validationCustom02">
+                        <Form.Label>Last name</Form.Label>
+                        <Form.Control
+                            required
+                            type="text"
+                            placeholder="Last name"                    />
+                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
-
-                    <Form.Group as={Col} md="3" controlId="validationCustom05">
-                        <Form.Label>Zip</Form.Label>
-                        <Form.Control type="text" placeholder="Zip" required />
-                        <Form.Control.Feedback type="invalid">Please provide a valid zip.</Form.Control.Feedback>
+                    <Form.Group as={Col} md="4" controlId="validationCustomUsername">
+                        <Form.Label>Username</Form.Label>
+                        <InputGroup hasValidation>
+                            <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
+                            <Form.Control
+                                type="text"
+                                placeholder="Username"
+                                aria-describedby="inputGroupPrepend"
+                                required
+                            />
+                            <Form.Control.Feedback type="invalid">Please choose a username.</Form.Control.Feedback>
+                        </InputGroup>
                     </Form.Group>
-                </Row>
+                    </Row>
 
-                <Form.Group className="mb-3">
-                    <Form.Check
-                        required
-                        label="I agree to following SleepEz terms and conditions."
-                        feedback="You must agree before submitting."
-                        feedbackType="invalid"
-                    />
-                </Form.Group>
-                {/* <Link to="/" style={{textDecoration:'none'}}> */}
-                <div className="button-signup-regis">
-                    <Button type="submit" className='signup-btn-regis'>Sign Up</Button>
-                </div>
-                <p className="or-text">Or</p>
-                <Link to="/login" style={{textDecoration:'none'}}>
-                    <div className="button-login-regis">
-                        <Button className='login-btn-regis'>Login</Button>
+                    <Row className="mb-3">
+                        <Form.Group as={Col} md="6" controlId="validationCustom03">
+                            <Form.Label>City</Form.Label>
+                            <Form.Control type="text" placeholder="City" required />
+                            <Form.Control.Feedback type="invalid">Please provide a valid city.</Form.Control.Feedback>
+                        </Form.Group>
+
+                        <Form.Group as={Col} md="3" controlId="validationCustom04">
+                            <Form.Label>State</Form.Label>
+                            <Form.Control type="text" placeholder="State" required />
+                            <Form.Control.Feedback type="invalid">Please provide a valid state.</Form.Control.Feedback>
+                        </Form.Group>
+
+                        <Form.Group as={Col} md="3" controlId="validationCustom05">
+                            <Form.Label>Zip</Form.Label>
+                            <Form.Control type="text" placeholder="Zip" required />
+                            <Form.Control.Feedback type="invalid">Please provide a valid zip.</Form.Control.Feedback>
+                        </Form.Group>
+                    </Row>
+
+                    <Form.Group className="mb-3">
+                        <Form.Check
+                            required
+                            label="I agree to following SleepEz terms and conditions."
+                            feedback="You must agree before submitting."
+                            feedbackType="invalid"
+                        />
+                    </Form.Group>
+                    {/* <Link to="/" style={{textDecoration:'none'}}> */}
+                    <div className="button-signup-regis">
+                        <Button type="submit" className='signup-btn-regis'>Sign Up</Button>
                     </div>
-                </Link>
-                {/* </Link> */}
-                </Form>
+                    <p className="or-text">Or</p>
+                    <Link to="/login" style={{textDecoration:'none'}}>
+                        <div className="button-login-regis">
+                            <Button className='login-btn-regis'>Login</Button>
+                        </div>
+                    </Link>
+                    {/* </Link> */}
+                    </Form>
+                </div>
             </div>
         </div>
-    </div>
     );
 }
 
