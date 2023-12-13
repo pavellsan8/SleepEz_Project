@@ -7,16 +7,19 @@ import Row from 'react-bootstrap/Row';
 import './signupContent.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function SignUpContent() {
   const [validated, setValidated] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+    } else {
+        navigate('/login');
     }
     setValidated(true);
   };
