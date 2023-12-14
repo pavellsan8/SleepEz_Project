@@ -1,8 +1,10 @@
+import { cliendId } from "../spotify.jsx";
 import { reducerCases } from "./constant.jsx";
 
+const storedToken = localStorage.getItem('token');
 export const initialState = {
-  token: null,
-  userInfo: null,
+  token: storedToken,
+  userInfo: cliendId,
   playlists: [],
   currentPlaying: null,
   playerState: false,

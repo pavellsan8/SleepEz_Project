@@ -12,7 +12,7 @@ function MusicContent() {
     setToken(storedToken || '');
     if (storedToken) {
       setClientToken(storedToken);
-      //console.log(storedToken);
+      console.log(storedToken);
     }
   }, []); 
 

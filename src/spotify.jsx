@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const authEndPoint = 'https://accounts.spotify.com/authorize?';
-const cliendId = '96e5626f2b2a449abf941a88333e8e73';
+export const cliendId = '96e5626f2b2a449abf941a88333e8e73';
 const redirectUrl = 'http://localhost:3000/music';
 const scopes = [
   'user-read-private',
