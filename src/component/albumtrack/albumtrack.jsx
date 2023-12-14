@@ -6,7 +6,7 @@ import { reducerCases } from "../../utils/constant.jsx";
 
 function AlbumTrack() {
     const [{ token }, dispatch] = useStateProvider();
-    const TRACK_ENDPOINT = "https://api.spotify.com/v1/playlists/3wdAo1Yvzss32Eue9GSilt/tracks";
+    const TRACK_ENDPOINT = "https://api.spotify.com/v1/playlists/37i9dQZF1DX3ZeFHRhhi7Y/tracks";
     const [tracks, setTracks] = useState([]);
   
     useEffect(() => {
@@ -20,10 +20,13 @@ function AlbumTrack() {
                 "Content-Type": "application/x-www-form-urlencoded"
               },
             });
-            const tracksData = response.data.items.tracks
+            const tracksData =  response.data.items.map(item => ({
+              name: item.track.name,
+              image: item.track.album.images[0].url,
+            }));
            
             console.log(tracksData);
-            setTracks([{ name: tracksData.name }]);
+            setTracks(tracksData);
         
           } catch (err) {
             console.error(`Error fetching playlist data: ${err}`);
@@ -31,27 +34,25 @@ function AlbumTrack() {
         };
   
         getTrackData();
+
       }
     }, [token, dispatch]);
-  
-    const changeCurrentPlaylist = (selectedPlaylistId) => {
-      dispatch({ type: reducerCases.SET_PLAYLIST_ID, selectedPlaylistId });
-    };
   
     return (
       <div className="user-playlist-container pt-5">
         <ul className="user-playlist">
-          {tracks.map(({ name, id }) => (
-            <li 
-              className="all-playlists"
-              key={id} 
-              onClick={() => changeCurrentPlaylist(id)}>
-              {name}
-            </li>
-          ))}
+        {tracks.map(({ name, image }, index) => (
+          <li 
+          key={index} >
+            <img 
+            src={image} 
+            alt={name} 
+            style={{ width: '200px', height: '200px', marginRight: '10px'}} />
+            {name}
+          </li>
+        ))}
         </ul>
       </div>
     );
 }
-
 export default AlbumTrack
