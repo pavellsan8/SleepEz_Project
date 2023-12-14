@@ -1,7 +1,7 @@
 import './sidebar.css';
 import React from 'react'
 import Playlist from '../playlist/playlist';
-import { FaHome, FaSearch, FaList } from "react-icons/fa";
+import { FaHome, FaSearch, FaList, FaRegHeart } from "react-icons/fa";
 
 function Sidebar() {
     return (
@@ -13,15 +13,15 @@ function Sidebar() {
             </div>
             <ul className='list-item-container'>
                 <li className='list-item'>
-                    <FaHome />
+                    <span className='list-icon'><FaHome /></span>
                     <span> Home</span>
                 </li>
                 <li className='list-item'>
-                    <FaSearch />
-                    <span> Search</span>
+                    <span className='list-icon'><FaRegHeart /></span>
+                    <span> Favourites</span>
                 </li>
-                <li class='list-item'>
-                    <FaList />
+                <li className='list-item'>
+                    <span className='list-icon'><FaList /></span>
                     <span> Your Library</span>
                 </li>
             </ul>

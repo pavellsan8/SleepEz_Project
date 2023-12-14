@@ -2,7 +2,7 @@ import './musicContent.css';
 import React, { useEffect, useState } from 'react'
 import { setClientToken } from '../../../spotify';
 import Sidebar from '../../sidebar/sidebar';
-//import axios from 'axios';
+import AlbumTrack from '../../albumtrack/albumtrack';
 
 function MusicContent() {
   const [token, setToken] = useState('');
@@ -34,6 +34,7 @@ function MusicContent() {
         token && 
         <div className='main-body-music'>
           <Sidebar/>
+          <AlbumTrack/>
         </div>
       }
     </div>

@@ -6,7 +6,7 @@ import "./playlist.css";
 
 function Playlist() {
   const [{ token }, dispatch] = useStateProvider();
-  const PLAYLIST_ENDPOINT = "https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n";
+  const PLAYLIST_ENDPOINT = "https://api.spotify.com/v1/playlists/3wdAo1Yvzss32Eue9GSilt";
   const [playlists, setPlaylists] = useState([]);
 
   useEffect(() => {
@@ -39,10 +39,13 @@ function Playlist() {
   };
 
   return (
-    <div className="user-playlist">
-      <ul>
+    <div className="user-playlist-container">
+      <ul className="user-playlist">
         {playlists.map(({ name, id }) => (
-          <li key={id} style={{ color: "white" }} onClick={() => changeCurrentPlaylist(id)}>
+          <li 
+            className="all-playlists"
+            key={id} 
+            onClick={() => changeCurrentPlaylist(id)}>
             {name}
           </li>
         ))}
