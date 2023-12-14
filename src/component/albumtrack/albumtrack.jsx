@@ -23,6 +23,7 @@ function AlbumTrack() {
             const tracksData =  response.data.items.map(item => ({
               name: item.track.name,
               image: item.track.album.images[0].url,
+            //   artists: item.track.artist[0].map(artist => artist.name).join(','),
             }));
            
             console.log(tracksData);
@@ -39,19 +40,15 @@ function AlbumTrack() {
     }, [token, dispatch]);
   
     return (
-      <div className="user-playlist-container pt-5">
-        <ul className="user-playlist">
+      <div className="user-track-container pt-5" style={{display: 'grid', gridTemplateColumns:'auto auto auto auto'}}>
         {tracks.map(({ name, image }, index) => (
-          <li 
-          key={index} >
-            <img 
-            src={image} 
-            alt={name} 
-            style={{ width: '200px', height: '200px', marginRight: '10px'}} />
-            {name}
-          </li>
+            <div className='user-tracks m-2'
+            key={index}>
+                <img className='song-image' src={image} alt={name} style={{ width: '20vh', height: '20vh'}} />
+                <p className='song-title'>{name}</p>
+                {/* //<p>{artists}</p> */}
+            </div>
         ))}
-        </ul>
       </div>
     );
 }

@@ -1,0 +1,15 @@
+.user-track-container {
+    height: max-content;
+}
+
+.song-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .song-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
