@@ -2,7 +2,6 @@ import './albumtrack.css';
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useStateProvider } from '../../utils/StateSupports.jsx';
-import { reducerCases } from "../../utils/constant.jsx";
 
 function AlbumTrack() {
     const [{ token }, dispatch] = useStateProvider();
@@ -33,18 +32,16 @@ function AlbumTrack() {
             console.error(`Error fetching playlist data: ${err}`);
           }
         };
-  
         getTrackData();
-
       }
     }, [token, dispatch]);
   
     return (
-      <div className="user-track-container pt-5" style={{display: 'grid', gridTemplateColumns:'auto auto auto auto'}}>
+      <div className="user-track-container pt-5" style={{display: 'grid', gridTemplateColumns:'15rem 15rem 15rem 15rem'}}>
         {tracks.map(({ name, image }, index) => (
             <div className='user-tracks m-2'
             key={index}>
-                <img className='song-image' src={image} alt={name} style={{ width: '20vh', height: '20vh'}} />
+                <img className='song-image' src={image} alt={name} style={{ width: '25vh', height: '25vh'}} />
                 <p className='song-title'>{name}</p>
                 {/* //<p>{artists}</p> */}
             </div>

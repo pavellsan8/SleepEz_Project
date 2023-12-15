@@ -2,6 +2,7 @@ import React from 'react'
 import './aboutusContent.css'
 import imageAu from '../../../asset/aboutus-img.png'
 import imageAu2 from '../../../asset/aboutus-img-2.png'
+import imageAu3 from '../../../asset/Lembaga.png'
 
 function AboutusContent() {
   return (
@@ -27,7 +28,7 @@ function AboutusContent() {
     <div className='main-div-2'>
       <div className='aboutus-content'>
         <div className='title-text-aboutus'>
-          <h1 className='title-texts'>WE GUARANTEE YOU CAN SLEEP EASILY & SOUNDLY</h1>
+          <h1 className='title-texts'>WE SURElY TO MAKE YOU COULD SLEEP EASILY & SOUNDLY</h1>
         </div>
         <div className='img-text-content-2'>
           <div className='text-aboutus-2'>
@@ -39,6 +40,23 @@ function AboutusContent() {
             <img className='image-setting' src={imageAu2} alt="" />
           </div>
         </div>
+      </div>
+    </div>
+
+    <div className='main-div-3'>
+      <div className='text-container'>
+        <p className='quotes-text'>
+          "In the symphony of life, a good night's sleep is the perfect harmony. Let Us create the ideal sleep experience for you."
+        </p>
+      </div>
+      <hr className='breaking-line' />
+      <div className='supported-text-container'>
+        <p className='supported-by'>
+          WE ARE SUPPORTED BY
+        </p>
+      </div>
+      <div className='image-lembaga'>
+        <img className='supported-image' src={imageAu3} alt="" />
       </div>
     </div>
     </>
