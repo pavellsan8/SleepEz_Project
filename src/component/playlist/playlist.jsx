@@ -7,8 +7,8 @@ import "./playlist.css";
 function Playlist() {
   const [{ token }, dispatch] = useStateProvider();
   const PLAYLIST_ENDPOINTS = [
-    "https://api.spotify.com/v1/playlists/3wdAo1Yvzss32Eue9GSilt",
     "https://api.spotify.com/v1/playlists/37i9dQZF1DX3ZeFHRhhi7Y",
+    "https://api.spotify.com/v1/playlists/3wdAo1Yvzss32Eue9GSilt",
     "https://api.spotify.com/v1/playlists/1CqMKEmvV1bQ7Gnnew8e0Y",
   ];
   const [playlists, setPlaylists] = useState([]);
