@@ -5,7 +5,7 @@ import { useStateProvider } from '../../utils/StateSupports.jsx';
 
 function AlbumTrack() {
     const [{ token }, dispatch] = useStateProvider();
-    const TRACK_ENDPOINT = "https://api.spotify.com/v1/playlists/37i9dQZF1DX3ZeFHRhhi7Y/tracks";
+    const TRACK_ENDPOINT = "https://api.spotify.com/v1/playlists/3wdAo1Yvzss32Eue9GSilt/tracks";
     const [tracks, setTracks] = useState([]);
   
     useEffect(() => {
@@ -37,7 +37,7 @@ function AlbumTrack() {
     }, [token, dispatch]);
   
     return (
-      <div className="user-track-container pt-5" style={{display: 'grid', gridTemplateColumns:'15rem 15rem 15rem 15rem'}}>
+      <div className="user-track-container">
         {tracks.map(({ name, image }, index) => (
             <div className='user-tracks m-2'
             key={index}>

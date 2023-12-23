@@ -3,10 +3,10 @@
 .sidebar-menu {
     background-color: black;
     color: #b3b3b3;
-    height: 333rem;
+    height: 109.3vh;
     display: flex;
     flex-direction: column;
-    width: 17%;
+    width: 20%;
     padding: 4rem 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -41,6 +41,7 @@
     cursor: pointer;
     transition: 0.3s ease-in-out;
     list-style-type: none;
+    font-size: 2.5vh;
 }
 
 .list-item:hover {

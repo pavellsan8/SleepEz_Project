@@ -28,7 +28,7 @@ function AboutusContent() {
     <div className='main-div-2'>
       <div className='aboutus-content'>
         <div className='title-text-aboutus'>
-          <h1 className='title-texts'>WE SURElY TO MAKE YOU COULD SLEEP EASILY & SOUNDLY</h1>
+          <h1 className='title-texts'>WE SURELY TO MAKE YOU COULD SLEEP EASILY & SOUNDLY</h1>
         </div>
         <div className='img-text-content-2'>
           <div className='text-aboutus-2'>

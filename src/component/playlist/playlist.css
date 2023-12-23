@@ -6,6 +6,7 @@
 }
 
 .user-playlist {
+  font-size: 2.3vh;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -14,12 +15,6 @@
   height: 50vh;
   max-height: 100%;
   overflow: auto;
-  &::-webkit-scrollbar {
-    width: 0.7rem;
-    &-thumb {
-      background-color: rgba(255, 255, 255, 0.6);
-    }
-  }
 }
 
 .all-playlists {

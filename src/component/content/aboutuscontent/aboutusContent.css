@@ -2,13 +2,14 @@
 
 .main-div-1 {
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
+    margin: 2rem 0;
 }
 
 .aboutus-content {
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .title-text-aboutus {
@@ -18,7 +19,7 @@
 
 .title-texts {
     font-weight: 800;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #072C47;
 }
 
@@ -34,7 +35,7 @@
 }
 
 .image-setting {
-    width: 90vh;
+    width: 80vh;
 }
 
 .text-aboutus {
@@ -52,7 +53,7 @@
 
 .main-div-2 {
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -71,7 +72,7 @@
 .main-div-3 {
     padding: 2rem;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
 }
 
 .text-container {
@@ -100,12 +101,50 @@
 }
 
 .image-lembaga {
-    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .supported-image {
-    width: 70%;
+    width: 60%;
 }
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .main-div-1, .main-div-2 {
+        height: 150vh;
+    }
+
+    .title-text-aboutus, .text-aboutus-2 {
+      width: 100%;
+    }
+  
+    .img-text-content, .img-text-content-2 {
+      flex-direction: column;
+    }
+  
+    .image-setting {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  
+    .text-aboutus {
+      margin: 1rem 0;
+    }
+
+    .quotes-text {
+        font-size: 2rem;
+    }
+  }
+  
+  /* Medium screens */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust styles for medium screens here */
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 1025px) {
+    /* Adjust styles for large screens here */
+  }
+  

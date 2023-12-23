@@ -1,5 +1,9 @@
 .user-track-container {
-    height: max-content;
+    margin: 3.5rem 0 0 0;
+    height: 100vh;
+    overflow-y: scroll;
+    display: grid; 
+    grid-template-columns:auto auto auto auto;
 }
 
 /* .song-image {
