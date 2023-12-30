@@ -1,19 +1,42 @@
 .user-track-container {
+    width: 100%;
     margin: 3.5rem 0 0 0;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
     overflow-y: scroll;
-    display: grid; 
-    grid-template-columns:auto auto auto auto;
+    height: 100vh;
+    cursor: pointer;
 }
 
-/* .song-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+.user-tracks {
+    position: relative;
+    text-align: center;
+}
 
-/* .song-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+.song-image {
+    width: 100%;
+    height: auto;
+}
+
+.song-title {
+    margin-top: 0.5rem;
+}
+
+.play-btn {
+    position: relative; /* Change position to relative */
+    display: none;
+}
+
+.play-btn-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Assuming the play icon is white */
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.user-tracks:hover .play-btn {
+    display: block;
+}

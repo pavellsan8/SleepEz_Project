@@ -2,10 +2,11 @@ import './albumtrack.css';
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useStateProvider } from '../../utils/StateSupports.jsx';
+import { FaPlayCircle } from "react-icons/fa";
 
 function AlbumTrack() {
     const [{ token }, dispatch] = useStateProvider();
-    const TRACK_ENDPOINT = "https://api.spotify.com/v1/playlists/3wdAo1Yvzss32Eue9GSilt/tracks";
+    const TRACK_ENDPOINT = "https://api.spotify.com/v1/playlists/37i9dQZF1DX3ZeFHRhhi7Y/tracks";
     const [tracks, setTracks] = useState([]);
   
     useEffect(() => {
@@ -41,8 +42,11 @@ function AlbumTrack() {
         {tracks.map(({ name, image }, index) => (
             <div className='user-tracks m-2'
             key={index}>
-                <img className='song-image' src={image} alt={name} style={{ width: '25vh', height: '25vh'}} />
+                <img className='song-image' src={image} alt={name} />
                 <p className='song-title'>{name}</p>
+                <button className='play-btn'>
+                  <FaPlayCircle className='play-btn-icon'/>
+                </button>
                 {/* //<p>{artists}</p> */}
             </div>
         ))}
