@@ -7,6 +7,13 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
 function NavbarDefault() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', 
+    });
+  };
+
   return (
     <div>  
       <Navbar expand="lg" className="navbar" bg="light" data-bs-theme="light" fixed="top">
@@ -21,19 +28,19 @@ function NavbarDefault() {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className="ms-auto">
               <Link to="/home" style={{textDecoration:'none'}}>
-                <Nav.Link className="navbar-option" href="#home">Home</Nav.Link>
+                <Nav.Link className="navbar-option" href="#home" onClick={scrollToTop}>Home</Nav.Link>
               </Link>
               {/* <Link to="/aboutus" style={{textDecoration:'none'}}> */}
                 <Nav.Link href="#tips">Tips</Nav.Link>
               {/* </link> */}
               <Link to="/musiclogin" style={{textDecoration:'none'}}>
-                <Nav.Link href="#music">Music</Nav.Link>
+                <Nav.Link href="#music" onClick={scrollToTop}>Music</Nav.Link>
               </Link>
               {/* <Link to="/aboutus" style={{textDecoration:'none'}}> */}
                 <Nav.Link href="#videos">Videos</Nav.Link>
               {/* </link> */}
               <Link to="/aboutus" style={{textDecoration:'none'}}>
-                <Nav.Link href="#aboutus">About Us</Nav.Link>
+                <Nav.Link href="#aboutus" onClick={scrollToTop}>About Us</Nav.Link>
               </Link>
             </Nav>
             <Nav className="ms-auto">
