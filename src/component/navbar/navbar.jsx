@@ -28,17 +28,17 @@ function NavbarDefault() {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className="ms-auto">
               <Link to="/home" style={{textDecoration:'none'}}>
-                <Nav.Link className="navbar-option" href="#home" onClick={scrollToTop}>Home</Nav.Link>
+                <Nav.Link href="#home" className="navbar-option" onClick={scrollToTop}>Home</Nav.Link>
               </Link>
-              {/* <Link to="/aboutus" style={{textDecoration:'none'}}> */}
+              {/* <Link to="/aboutus" style={{textDecoration:'none'}}>
                 <Nav.Link href="#tips">Tips</Nav.Link>
-              {/* </link> */}
+              </Link> */}
               <Link to="/musiclogin" style={{textDecoration:'none'}}>
                 <Nav.Link href="#music" onClick={scrollToTop}>Music</Nav.Link>
               </Link>
-              {/* <Link to="/aboutus" style={{textDecoration:'none'}}> */}
+              <Link to="/video" style={{textDecoration:'none'}}>
                 <Nav.Link href="#videos">Videos</Nav.Link>
-              {/* </link> */}
+              </Link>
               <Link to="/aboutus" style={{textDecoration:'none'}}>
                 <Nav.Link href="#aboutus" onClick={scrollToTop}>About Us</Nav.Link>
               </Link>

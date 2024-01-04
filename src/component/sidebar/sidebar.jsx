@@ -1,7 +1,7 @@
 import './sidebar.css';
 import React from 'react'
 import Playlist from '../playlist/playlist';
-import { FaHome, FaSearch, FaList, FaRegHeart } from "react-icons/fa";
+import { FaHome, FaList, FaRegHeart } from "react-icons/fa";
 
 function Sidebar() {
     return (

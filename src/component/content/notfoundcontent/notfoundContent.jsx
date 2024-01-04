@@ -13,7 +13,7 @@ function NotfoundContent() {
         <div className='error-subtitle'>
           <p className='subtitle-text'>Hmm looks like you need some sleep here.</p>
         </div>
-        <Link to="/home" style={{textDecoration:'none'}}>
+        <Link to="/" style={{textDecoration:'none'}}>
           <button className='back-home-btn'>Back to Home</button>
         </Link>
     </div>

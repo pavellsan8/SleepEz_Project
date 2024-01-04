@@ -8,6 +8,7 @@ function AlbumTrack() {
     const [{ token }, dispatch] = useStateProvider();
     const TRACK_ENDPOINT = "https://api.spotify.com/v1/playlists/37i9dQZF1DX3ZeFHRhhi7Y/tracks";
     const [tracks, setTracks] = useState([]);
+    const [currentSong, setCurrentSong] = useState(null);
   
     useEffect(() => {
       if (token) {
@@ -21,6 +22,7 @@ function AlbumTrack() {
               },
             });
             const tracksData =  response.data.items.map(item => ({
+              id: item.track.id,
               name: item.track.name,
               image: item.track.album.images[0].url,
             //   artists: item.track.artist[0].map(artist => artist.name).join(','),
@@ -36,18 +38,26 @@ function AlbumTrack() {
         getTrackData();
       }
     }, [token, dispatch]);
+
+    const playSong = (id) => {
+      const selectedSong = tracks.find(song => song.id === id);
+      setCurrentSong(selectedSong);
+      // audioPlayer.src = `https://open.spotify.com/track/${id}`;
+      // audioPlayer.play();
+      window.open(`https://open.spotify.com/track/${id}`);
+  };
+
   
     return (
       <div className="user-track-container">
-        {tracks.map(({ name, image }, index) => (
+        {tracks.map(({ id, name, image }) => (
             <div className='user-tracks m-2'
-            key={index}>
+            key={id}>
                 <img className='song-image' src={image} alt={name} />
                 <p className='song-title'>{name}</p>
-                <button className='play-btn'>
+                <button className='play-btn' onClick={() => playSong(id)}>
                   <FaPlayCircle className='play-btn-icon'/>
                 </button>
-                {/* //<p>{artists}</p> */}
             </div>
         ))}
       </div>

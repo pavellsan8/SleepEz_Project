@@ -11,6 +11,7 @@ import MusicMainPage from './pages/Music/MusicPage.jsx';
 import LoginPage from './pages/Login/Login.jsx';
 import AboutUsPage from './pages/AboutUs/AboutUs.jsx';
 import NotFoundPage from './pages/NotFound/NotFound.jsx';
+import VideoPage from './pages/Video/VideosPage.jsx';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/home" element={<HomePage/>} />
         <Route path="/musiclogin" element={<MusicLoginPage/>} />
         <Route path="/music" element={<MusicMainPage/>} />
+        <Route path="/video" element={<VideoPage/>} />
         <Route path="/aboutus" element={<AboutUsPage/>} />
         <Route path="/signup" element={<SignUpPage/>} />
         <Route path="/login" element={<LoginPage/>} />
