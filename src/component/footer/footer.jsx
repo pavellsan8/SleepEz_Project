@@ -3,7 +3,15 @@ import './footer.css';
 import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaRegEnvelope, FaPaperPlane} from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-const Footer = () => {
+function Footer() {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth', 
+        });
+      };
+
     return (
         <>
         <div className="Footer">
@@ -29,22 +37,26 @@ const Footer = () => {
                         <ul>
                             <li className="nav-item">
                                 <Link to="/home" style={{textDecoration: 'none'}}>
-                                    <a className="" href="/">Home</a>
+                                    <a href="#home" onClick={scrollToTop}>Home</a>
                                 </Link>
                             </li>
-                            <li className="nav-item">
-                                <a className="" href="/">Tips</a>
-                            </li>
+                            {/* <li className="nav-item">
+                                <a className="" href="">Tips</a>
+                            </li> */}
                             <li className="nav-item">
                                 <Link to="/musiclogin" style={{textDecoration: 'none'}}>
-                                    <a className="" href="/">Music</a>
+                                    <a href="#music" onClick={scrollToTop}>Music</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">Videos</a>
+                                <Link to="/video" style={{textDecoration: 'none'}}>
+                                    <a href="#videos" onClick={scrollToTop}>Videos</a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="" href="/">About Us</a>
+                                <Link to="/aboutus" style={{textDecoration: 'none'}}>
+                                    <a href="#aboutus" onClick={scrollToTop}>About Us</a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

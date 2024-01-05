@@ -14,15 +14,15 @@ function Sidebar() {
             <ul className='list-item-container'>
                 <li className='list-item'>
                     <span className='list-icon'><FaHome /></span>
-                    <span> Home</span>
+                    <span className='span-text'> Home</span>
                 </li>
                 <li className='list-item'>
                     <span className='list-icon'><FaRegHeart /></span>
-                    <span> Favourites</span>
+                    <span className='span-text'> Favourites</span>
                 </li>
                 <li className='list-item'>
                     <span className='list-icon'><FaList /></span>
-                    <span> Your Library</span>
+                    <span className='span-text'> Your Library</span>
                 </li>
             </ul>
         <Playlist />

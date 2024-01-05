@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+.flexing-div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    overflow-y: scroll;
+    margin: 3.5rem 0 0 0;
+}
+
+.videos-allpage {
+    display: flex;
+    flex-direction: column;
+}
+
+.videos-allpage2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-head {
+    font-size: 3.3vh;
+    font-weight: 600;
+    margin: 1rem;
+}
+
 .videos-div {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -7,20 +33,32 @@
     -webkit-column-width: 33%;
     -moz-column-width: 33%;
     column-width: 33%;
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .videos-div .videos-container {
     -webkit-transition: all 350ms ease;
     transition: all 350ms ease;
     cursor: pointer;
-    margin-bottom: 12px;
-    border-radius: 10px;
+}
+
+.videos-div .videos-container .videos-item {
+    border-radius: 10px; 
     overflow: hidden;
 }
 
 .videos-div .videos-container:hover {
     transform: scale(0.98);
+}
+
+.videos-title-text {
+    font-size: 2.4vh;
+    margin-bottom: 10px;
+}
+
+.videos-allpage2 {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 991px) {
@@ -31,7 +69,7 @@
     }
 }
 
-@media (max-width: 480) {
+@media (max-width: 480px) {
     .videos-div {
         -webkit-column-count: 1;
         -moz-column-count: 1;

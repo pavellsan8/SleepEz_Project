@@ -37,7 +37,7 @@ function NavbarDefault() {
                 <Nav.Link href="#music" onClick={scrollToTop}>Music</Nav.Link>
               </Link>
               <Link to="/video" style={{textDecoration:'none'}}>
-                <Nav.Link href="#videos">Videos</Nav.Link>
+                <Nav.Link href="#videos" onClick={scrollToTop}>Videos</Nav.Link>
               </Link>
               <Link to="/aboutus" style={{textDecoration:'none'}}>
                 <Nav.Link href="#aboutus" onClick={scrollToTop}>About Us</Nav.Link>

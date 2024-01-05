@@ -26,7 +26,7 @@ function Playlist() {
                   "Content-Type": "application/x-www-form-urlencoded",
                 },
               });
-              return { name: response.data.name, id: response.data.id };
+              return { name: response.data.name, id: response.data.id, url: response.data.external_urls.spotify };
             })
           );
 
@@ -36,23 +36,27 @@ function Playlist() {
           console.error(`Error fetching playlist data: ${err}`);
         }
       };
-
       getPlaylistData();
     }
   }, [token, dispatch]);
 
-  const changeCurrentPlaylist = (selectedPlaylistId) => {
-    dispatch({ type: reducerCases.SET_PLAYLIST_ID, selectedPlaylistId });
+  const openSpotifyPlaylist = (playlistUri) => {
+    window.open(playlistUri, "_blank");
+  };
+
+  const changeCurrentPlaylist = (selectedPlaylistUri) => {
+    dispatch({ type: reducerCases.SET_PLAYLIST_ID, selectedPlaylistUri });
+    openSpotifyPlaylist(selectedPlaylistUri);
   };
 
   return (
     <div className="user-playlist-container">
       <ul className="user-playlist">
-        {playlists.map(({ name, id }) => (
+        {playlists.map(({ name, id, url }) => (
           <li 
             className="all-playlists"
             key={id} 
-            onClick={() => changeCurrentPlaylist(id)}
+            onClick={() => changeCurrentPlaylist(url)}
           >
             {name}
           </li>

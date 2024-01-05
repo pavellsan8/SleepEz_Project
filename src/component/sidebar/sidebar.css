@@ -47,3 +47,25 @@
 .list-item:hover {
     color: white;
 }
+
+.span-text {
+    font-size: 2.5vh;
+}
+
+@media (max-width: 750px) {
+    .list-icon, .list-item {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the content */
+    }
+
+    .span-text {
+        display: none; /* Hide the span-text */
+    }
+}
+
+@media (max-width: 470px) {
+    .sidebar-menu {
+        width: 50%;
+    }
+}

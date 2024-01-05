@@ -24,5 +24,11 @@
 }  
 
 .all-playlists:hover {
-    color: white;
+  color: white;
+}
+
+@media (max-width: 750px) {
+  .all-playlists {
+    font-size: 2vh;
+  }
 }
